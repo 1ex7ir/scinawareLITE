@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>💚</title>
+<HTA:APPLICATION 
+    APPLICATIONNAME="GreenSpam" 
+    SCROLL="no" 
+    BORDER="none" 
+    SHOWINTASKBAR="no" 
+    SINGLEINSTANCE="no"
+/>
+<script language="javascript">
+function start() {
+    setInterval(function() {
+        var win = window.open("", "", "width=300,height=100,top=" + (Math.random()*500) + ",left=" + (Math.random()*800));
+        if (win) {
+            win.document.write('<body style="background:black; color:lime; font-size:30px; display:flex; align-items:center; justify-content:center;">scinka</body>');
+        }
+    }, 300);
+}
+</script>
+</head>
+<body onload="start()" style="display:none;">
+</body>
+</html>
